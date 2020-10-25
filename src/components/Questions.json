@@ -1,0 +1,38 @@
+[
+        {
+            "questionText": "Na jakie studia uczęszcza podiot liryczny?",
+            "answerOptions": [
+                { "answerText": "Ekonomia", "isCorrect": true },
+                { "answerText": "Informatyka", "isCorrect": false },
+                { "answerText": "Medycyna", "isCorrect": false },
+                { "answerText": "Granie na dudach", "isCorrect": false }
+            ]
+        },
+        {
+            "questionText": "Czym został przywieziony laptop do gier?",
+            "answerOptions": [
+                { "answerText": "Tirem", "isCorrect": false },
+                { "answerText": "Wózkiem widłowym", "isCorrect": true },
+                { "answerText": "Żurawiem", "isCorrect": false },
+                { "answerText": "Rowerem", "isCorrect": false }
+            ]
+        },
+        {
+            "questionText": "Co napisał SMS-em do swojej rodziny podmiot liryczny?",
+            "answerOptions": [
+                { "answerText": "Że ich nie nawidzi", "isCorrect": false },
+                { "answerText": "Że ich przeprasza", "isCorrect": false },
+                { "answerText": "Że ich kocha", "isCorrect": true },
+                { "answerText": "Że brał narkotyki", "isCorrect": false }
+            ]
+        },
+        {
+            "questionText": "W co zmienił się świat podmiotu lirycznego po włączeniu laptopa?",
+            "answerOptions": [
+                { "answerText": "W jego idealny świat", "isCorrect": false },
+                { "answerText": "W post-apokaliptyczny surviwal", "isCorrect": false },
+                { "answerText": "W świat fantasy z magią i gildią poszukiwaczy przygód", "isCorrect": false },
+                { "answerText": "W ciemną, niszczącą ziemie pustkę", "isCorrect": true }
+            ]
+        }
+    ]

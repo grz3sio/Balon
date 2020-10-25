@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+$main: #090909;
+$main-sub: #0C0C0C;
+$button: #131313;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: roboto, helvetica;
+    font-size: 14px;
+    background-color: $main;
+    color: #ffffff;
+}
+
+
+.quiz {
+    position: absolute;
+    height: 100vh;
+    width: 75%;
+    left: 50%;
+    margin-left: -37.5%;
+    background-color: $main;
+}
+
+.text {
+    width: 100%;
+
+    h1 {
+        margin: 20px 0 10px;
+        text-align: center;
+        font-size: 32px;
+        font-family: 'Open Sans';
+    }
+
+    p {
+        margin: 10px 50px;
+        padding: 10px;
+        font-size: 2.2vh;
+    }
+}
+
+.quizQuestions {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    margin-left: calc(-40% - 40px);
+    padding: 20px;
+    bottom: 10%;
+    background-color: $main-sub;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+
+    .question {
+        align-self: center;
+        margin: 5px 0 20px;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Open Sans';
+        background-color: $button;
+        width: calc(80% + 10px);
+        height: 50px;
+        line-height: 2.5;
+        border-radius: 10px;
+    }
+
+    hr {
+        align-self: center;
+        width: calc(80% + 10px);
+        border-color: #1C1C1C;
+    }
+
+    .answers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        padding-bottom: 15px;
+
+        button {
+            position: relative;
+            margin: 10px;
+            width: 40%;
+            height: 50px;
+            font-size: 18px;
+            color: #ffffff;
+
+            border-radius: 10px;
+            border: none;
+            background-color: $button;
+            transition: font-size .06s;
+            
+            &:focus {
+                outline: none;
+            }
+
+            &:before {
+                position: absolute;
+                content: '';
+                height: 0;
+                width: 0;
+                left: 0;
+                bottom: 0;
+                border: 3px solid transparent;
+                border-radius: 10px;
+            }
+
+            &:after {
+                position: absolute;
+                content: '';
+                height: 0;
+                width: 0;
+                right: 0;
+                top: 0;
+                border: 3px solid transparent;
+                border-radius: 10px;
+            }
+
+            &:hover {
+                &:before {
+                    height: 50px;
+                    width: 100%;
+                    left: 0;
+                    bottom: 0;
+                    border: 3px solid #DE5ADC;
+                    box-sizing: border-box;
+                    border-top: none;
+                    border-left: none;
+                    transition: width .1s linear, height .1s linear .1s;
+                }
+
+                &:after {
+                    height: 50px;
+                    width: 100%;
+                    right: 0;
+                    top: 0;
+                    border: 3px solid #DE5ADC;
+                    box-sizing: border-box;
+                    border-right: none;
+                    border-bottom: none;
+                    transition: width .1s linear, height .1s linear .1s;
+                }
+            }
+        }
+    }
+}
+
+.score {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    margin-left: calc(-40% - 40px);
+    padding: 20px;
+    bottom: 5%;
+    background-color: $main-sub;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+
+    h2 {
+        align-self: center;
+        margin-bottom: 20px;
+        font-family: 'Open Sans';
+        background-color: $button;
+        width: 300px;
+        height: 40px;
+        line-height: 2;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    img {
+        align-self: center;
+        width: 45%;
+        height: 45%;
+    }
+}
