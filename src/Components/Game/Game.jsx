@@ -36,7 +36,8 @@ const Game = () => {
         setMoney(moneyToTake );
         setMoneyToTake(0);
         setBaloon(baloon+1);
-        setPump(0);
+        setPump(6);
+        setTimeout(()=>setPump(0), 500);
     }
 
     if(baloon <= baloonsCount){

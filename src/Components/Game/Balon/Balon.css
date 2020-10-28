@@ -32,7 +32,7 @@
 	animation: baloon5 1s normal;
 	animation-fill-mode: forwards;
 }
-.pFly[pump='fly']{
+.pFly[pump='6']{
 	animation: baloonFly 1s normal;
 }
 @keyframes baloon{
@@ -67,6 +67,6 @@
 	100%{width:490px; height: 700px; top:-280pt; left: 240px;transform: rotate(-150deg);}
 }
 @keyframes baloonFly{
-	0%{transform: rotate(-150deg);}
-	100%{top:-800pt; left: 570px;transform: rotate(-200deg);}
+	100%{width:490px; height: 700px; top:-280pt; left: 240px;transform: rotate(-150deg);}
+	100%{width:490px; height: 700px; top:-800pt; left: 570px;transform: rotate(-200deg);}
 }
