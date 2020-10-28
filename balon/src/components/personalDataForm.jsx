@@ -2,10 +2,18 @@ import React from 'react'
 import { useFormik } from 'formik'
 import SendIcon from '@material-ui/icons/Send';
 import Button from '@material-ui/core/Button';
-import Select from '@material-ui/core/Select';
+import NativeSelect from '@material-ui/core/Select';
 import { Grid, TextField } from '@material-ui/core';
 
 import '../styles/personalDataForm.css'
+
+// const saveUserData = (newUserData) => {
+//     var newData = JSON.parse(data);
+//     newData.userData.push(newUserData);
+//     data = JSON.stringify(newData);
+
+    
+// }
 
 const PersonalDataForm = () => {
     const countriesList = [
@@ -277,7 +285,7 @@ const PersonalDataForm = () => {
             age: '',
         },
         onSubmit: values => {
-            alert(JSON.stringify(values, null, 2))
+            alert(values);
         }
     });
 
@@ -318,21 +326,23 @@ const PersonalDataForm = () => {
                         />
                     </Grid>
                     <Grid item>
-                        <Select
-                            native
-                            required
-                            value={formik.values.country}
-                            onChange={formik.handleChange}
-                            inputProps={{
-                                id: "country",
-                                name: "country"
-                            }}
-                        >
-                            <option aria-label='none' value=''/>
-                            {countriesList.map(country => {
-                                return <option value={country.label}>{country.label} {getCountryFlag(country.code)}</option>
-                            })}
-                        </Select>
+                        <Grid container>
+                            <NativeSelect
+                                required
+                                style={{width: 165, marginTop: 16}}
+                                value={formik.values.country}
+                                onChange={formik.handleChange}
+                                inputProps={{
+                                    id: "country",
+                                    name: "country",
+                                    'aria-label': 'Select country*'
+                                }}
+                            >
+                                {countriesList.map(country => {
+                                    return <option value={country.label}>{country.label} {getCountryFlag(country.code)}</option>
+                                })}
+                            </NativeSelect>
+                        </Grid>                      
                     </Grid>
                 </Grid>
                 <Grid container spacing={2} justify='center'>
@@ -346,8 +356,6 @@ const PersonalDataForm = () => {
                             value={formik.values.email}
                         />
                     </Grid>
-                </Grid>
-                <Grid container spacing={2} justify='center'>
                     <Grid item>
                         <TextField required
                             label='Age'
@@ -359,7 +367,6 @@ const PersonalDataForm = () => {
                         />
                     </Grid>
                 </Grid>
-                
                 <Grid item>
                     <Button type='submit' endIcon={<SendIcon/>} className="submitButton">Send</Button>
                 </Grid>
