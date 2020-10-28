@@ -35,6 +35,7 @@ const Quiz = () => {
                         <div className='score'>
                             <h2>Twój wynik: {score}/{questions.length}</h2>
                             <img src={dip} alt='dip'/>
+                            <a href="/game">idź dalej</a>
                         </div>
                     ) : (
                         <div className='quizQuestions'>
