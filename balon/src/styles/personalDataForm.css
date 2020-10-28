@@ -1,0 +1,12 @@
+.form{
+    display: flexbox;
+    margin-top: 3%;
+}
+
+.submitButton{
+    text-align: center;
+}
+
+.formElement{
+    width: 300;
+}
