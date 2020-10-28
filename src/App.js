@@ -1,12 +1,8 @@
 import React from 'react';
-import Game from './Components/Game/Game'
+import Quiz from './components/Quiz'
 
-function App() {
-  return (
-    <div>
-      <Game/>
-    </div>
-  );
+export default function App() {
+	return (
+		<Quiz/>
+	)
 }
-
-export default App;

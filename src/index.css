@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: roboto, helvetica;
+  font-size: 14px;
+  background-color: #deedf1;
+  color: #000;
+}
+
+.quiz {
+  position: absolute;
+  height: 100vh;
+  width: 75%;
+  left: 50%;
+  margin-left: -37.5%;
+  background-color: #deedf1;
+}
+
+.text {
+  width: 100%;
+}
+
+.text h1 {
+  margin: 20px 0 10px;
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Open Sans';
+}
+
+.text p {
+  margin: 10px 50px;
+  padding: 10px;
+  font-size: 2.2vh;
+}
+
+.quizQuestions {
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  margin-left: calc(-40% - 40px);
+  padding: 20px;
+  bottom: 10%;
+  background-color: #C6D4D7;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.quizQuestions .question {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 5px 0 20px;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Open Sans';
+  background-color: #AFBBBE;
+  width: calc(80% + 10px);
+  height: 50px;
+  line-height: 2.5;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.quizQuestions hr {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: calc(80% + 10px);
+  border-color: #AFBBBE;
+}
+
+.quizQuestions .answers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+
+.quizQuestions .answers button {
+  position: relative;
+  margin: 10px;
+  width: 40%;
+  height: 50px;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  background-color: #AFBBBE;
+  -webkit-transition: font-size .06s;
+  transition: font-size .06s;
+}
+
+.quizQuestions .answers button:focus {
+  outline: none;
+}
+
+.quizQuestions .answers button:before {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  border: 3px solid transparent;
+  border-radius: 10px;
+}
+
+.quizQuestions .answers button:after {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  right: 0;
+  top: 0;
+  border: 3px solid transparent;
+  border-radius: 10px;
+}
+
+.quizQuestions .answers button:hover:before {
+  height: 50px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border: 3px solid #F56473;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top: none;
+  border-left: none;
+  -webkit-transition: width .1s linear, height .1s linear .1s;
+  transition: width .1s linear, height .1s linear .1s;
+}
+
+.quizQuestions .answers button:hover:after {
+  height: 50px;
+  width: 100%;
+  right: 0;
+  top: 0;
+  border: 3px solid #F56473;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-right: none;
+  border-bottom: none;
+  -webkit-transition: width .1s linear, height .1s linear .1s;
+  transition: width .1s linear, height .1s linear .1s;
+}
+
+.score {
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  margin-left: calc(-40% - 40px);
+  padding: 20px;
+  bottom: 5%;
+  background-color: #C6D4D7;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.score h2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 20px;
+  font-family: 'Open Sans';
+  background-color: #AFBBBE;
+  width: 300px;
+  height: 40px;
+  line-height: 2;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.score img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 45%;
+  height: 45%;
+}
+/*# sourceMappingURL=index.css.map */
