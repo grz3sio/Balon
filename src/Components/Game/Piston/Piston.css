@@ -1,0 +1,57 @@
+.stick1{
+	background : #313750;
+	position : absolute ;
+	left : 17pt;
+	width : 65pt;
+	height : 10pt;
+	border-radius: 3px;
+}
+
+.stick2{
+	background : #313750;
+	position : absolute ;
+	left : 45pt;
+	width : 10pt;
+	height : 90pt;
+}
+.animate[pushed='1']{
+	animation: stick 1s normal;
+}
+.box{
+	border-radius: 7px;
+	background : #525D7A;
+	position : absolute ;
+	top : 90pt;
+	width : 100pt;
+	height : 100pt;
+	border: none;
+	outline: inherit;
+}
+
+.stamp-balloon{
+	position: absolute;
+	left : 30pt;
+	top : 15pt;
+	width:63px; 
+	height:90px;
+	background-color:#F56473;
+	border-radius:50% 50% 50% 50%/60% 60% 40% 40%;
+	transform: rotate(190deg);
+}
+
+.stamp-triangle{
+	position: absolute;
+	left : 40pt;
+	top : 78pt;
+	border-bottom: 12px solid #F56473; 
+	border-left: 10px solid transparent; 
+	border-right: 10px solid transparent; 
+	transform: rotate(13deg);
+}
+
+@keyframes stick{
+	0%{top:0px;}
+	50%{top:100px;}
+	87.5%{top:0px;}
+	100%{top:0px;}
+}
