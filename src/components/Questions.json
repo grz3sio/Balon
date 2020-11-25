@@ -1,4 +1,5 @@
-[
+{
+    "polish": [
         {
             "questionText": "Na jakie studia uczęszcza podiot liryczny?",
             "answerOptions": [
@@ -35,4 +36,44 @@
                 { "answerText": "W ciemną, niszczącą ziemie pustkę", "isCorrect": true }
             ]
         }
+    ],
+
+    "english": [
+        {
+            "questionText": "The subject was involved in numerous raids on what terrorist organisation?",
+            "answerOptions": [
+                { "answerText": "Abu Sayyaf", "isCorrect": false },
+                { "answerText": "Jund al-Aqsa", "isCorrect": false },
+                { "answerText": "Al-Quaeda", "isCorrect": true },
+                { "answerText": "Al-Badr", "isCorrect": false }
+            ]
+        },
+        {
+            "questionText": "What is the subject tracing as his speaking?",
+            "answerOptions": [
+                { "answerText": "An IP address", "isCorrect": true },
+                { "answerText": "His ex-girlfriend", "isCorrect": false },
+                { "answerText": "An MAC address", "isCorrect": false },
+                { "answerText": "His secret network of spies all across USA", "isCorrect": false }
+            ]
+        },
+        {
+            "questionText": "In how many ways can the subject kill the recipient of the angry rant using his bare hands only?",
+            "answerOptions": [
+                { "answerText": "200", "isCorrect": false },
+                { "answerText": "420", "isCorrect": false },
+                { "answerText": "over 520", "isCorrect": false },
+                { "answerText": "over 700", "isCorrect": true }
+            ]
+        },
+        {
+            "questionText": "What military forces is the subject the top sniper of?",
+            "answerOptions": [
+                { "answerText": "The US military forces", "isCorrect": true },
+                { "answerText": "The British military forces", "isCorrect": false },
+                { "answerText": "The Chineese military forces", "isCorrect": false },
+                { "answerText": "The Korean mlitary forces", "isCorrect": false }
+            ]
+        }
     ]
+}
